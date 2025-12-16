@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Arani Siriwardane | Portfolio</title>
+
+  <!-- Tailwind CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+
+  <!-- Tailwind config -->
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            neon: "#7c7cff",
+          },
+        },
+      },
+    };
+  </script>
+
+  <style>
+    html { scroll-behavior: smooth; }
+  </style>
+</head>
+
+<body class="bg-gradient-to-br from-gray-900 via-black to-gray-900 text-white">
+
+<!-- Background blobs -->
+<div class="fixed inset-0 -z-10 overflow-hidden">
+  <div class="absolute w-96 h-96 bg-purple-600/30 rounded-full blur-3xl top-10 left-10 animate-pulse"></div>
+  <div class="absolute w-96 h-96 bg-blue-600/30 rounded-full blur-3xl bottom-10 right-10 animate-pulse"></div>
+</div>
+
+<!-- Navbar -->
+<nav class="fixed top-0 w-full backdrop-blur bg-black/40 border-b border-white/10 z-50">
+  <div class="max-w-6xl mx-auto flex justify-between items-center px-6 py-4">
+    <h1 class="font-bold text-xl text-neon">Arani Siriwardane</h1>
+    <div class="space-x-6 hidden md:block">
+      <a href="#about" class="hover:text-neon">About</a>
+      <a href="#projects" class="hover:text-neon">Projects</a>
+      <a href="#contact" class="hover:text-neon">Contact</a>
+    </div>
+  </div>
+</nav>
+
+<!-- Hero -->
+<section class="h-screen flex items-center justify-center text-center px-6">
+  <div class="max-w-2xl">
+    <h1 class="text-5xl md:text-6xl font-extrabold mb-6">
+      Hi, I'm <span class="text-neon">Arani</span>
+    </h1>
+
+    <p class="text-xl text-gray-300 mb-8">
+      <span id="typing"></span>
+    </p>
+
+    <div class="flex flex-col sm:flex-row gap-4 justify-center">
+      <a href="#projects"
+         class="px-8 py-4 rounded-full bg-neon text-black font-semibold hover:scale-110 transition">
+        View My Work
+      </a>
+
+      <!-- CV Download -->
+      <a href="Arani Siriwardane.pdf" download
+         class="px-8 py-4 rounded-full border border-neon text-neon hover:bg-neon hover:text-black transition">
+        Download CV
+      </a>
+    </div>
+  </div>
+</section>
+
+<!-- About -->
+<section id="about" class="max-w-6xl mx-auto px-6 py-24 reveal">
+  <h2 class="text-3xl font-bold mb-6">About Me</h2>
+  <p class="text-gray-300 leading-relaxed max-w-3xl">
+    I'm an undergraduate ICT student passionate about learning new technologies
+    and improving my skills by working on real-world projects.
+  </p>
+</section>
+
+<!-- Projects -->
+<section id="projects" class="max-w-6xl mx-auto px-6 py-24">
+  <h2 class="text-3xl font-bold mb-12">Projects</h2>
+
+  <div class="grid md:grid-cols-2 gap-10">
+
+    <!-- Canteen Compass -->
+    <div class="reveal bg-white/5 backdrop-blur p-8 rounded-2xl border border-white/10 hover:scale-105 transition">
+      <h3 class="text-xl font-bold mb-2">Canteen Compass</h3>
+      <p class="text-sm text-gray-400 mb-3">(Individual University Project)</p>
+      <p class="text-gray-300 mb-3">
+        Mini canteen control system to manage food items and orders.
+      </p>
+      <p class="text-gray-400 text-sm">Language: C</p>
+      <a href="https://github.com/Aranie11" target="_blank"
+         class="text-neon hover:underline">🔗 View Progress</a>
+    </div>
+
+    <!-- GameOn -->
+    <div class="reveal bg-white/5 backdrop-blur p-8 rounded-2xl border border-white/10 hover:scale-105 transition">
+      <h3 class="text-xl font-bold mb-2">GameOn</h3>
+      <p class="text-sm text-gray-400 mb-3">(Group University Project)</p>
+      <p class="text-gray-300 mb-3">
+        Web application featuring mini games with interactive UI.
+      </p>
+      <p class="text-gray-400 text-sm mb-4">
+        Tech: HTML · CSS · JavaScript · PHP · SQL
+      </p>
+      <a href="https://gameon03.infinityfree.me/" target="_blank"
+         class="text-neon hover:underline">🔗 View Project</a>
+    </div>
+
+    <!-- Portfolio -->
+    <div class="reveal bg-white/5 backdrop-blur p-8 rounded-2xl border border-white/10 hover:scale-105 transition">
+      <h3 class="text-xl font-bold mb-2">Portfolio Website</h3>
+      <p class="text-gray-300">
+        Personal portfolio website to showcase skills and projects.
+      </p>
+    </div>
+
+    <!-- Quiz App -->
+    <div class="reveal bg-white/5 backdrop-blur p-8 rounded-2xl border border-white/10 hover:scale-105 transition">
+      <h3 class="text-xl font-bold mb-2">Quiz App</h3>
+      <p class="text-sm text-gray-400 mb-3">(Individual Project)</p>
+      <p class="text-gray-300 mb-3">
+        Mobile quiz application designed for smartphones.
+      </p>
+      <p class="text-gray-400 text-sm mb-4">
+        Tech: Flutter · Dart · GitHub
+      </p>
+      <a href="https://aranie11.github.io/quiz-app/" target="_blank"
+         class="text-neon hover:underline">🔗 View Project</a>
+    </div>
+
+    <!-- Campus Chatbot -->
+    <div class="reveal bg-white/5 backdrop-blur p-8 rounded-2xl border border-white/10 hover:scale-105 transition">
+      <h3 class="text-xl font-bold mb-2">Campus Chatbot</h3>
+      <p class="text-sm text-yellow-400 mb-3">(Under Development)</p>
+      <p class="text-gray-300 mb-3">
+        AI-powered chatbot designed to assist students with campus-related queries.
+      </p>
+      <a href="https://github.com/Aranie11" target="_blank"
+         class="text-neon hover:underline">🔗 View Progress</a>
+    </div>
+
+  </div>
+</section>
+
+<!-- Contact -->
+<section id="contact" class="max-w-6xl mx-auto px-6 py-24 reveal">
+  <h2 class="text-3xl font-bold mb-6">Connect With Me</h2>
+  <div class="flex gap-6 mt-6">
+    <a href="https://www.linkedin.com/in/arani-siriwardane-04202a276/"
+       target="_blank"
+       class="px-6 py-3 rounded-full bg-blue-600 hover:scale-110 transition">
+      LinkedIn
+    </a>
+    <a href="https://github.com/Aranie11"
+       target="_blank"
+       class="px-6 py-3 rounded-full bg-gray-700 hover:scale-110 transition">
+      GitHub
+    </a>
+  </div>
+</section>
+
+<!-- Footer -->
+<footer class="text-center text-gray-500 py-8">
+  © 2025 Arani Siriwardane. All rights reserved.
+</footer>
+
+<!-- JS -->
+<script>
+  // Typing effect
+  const text = "Undergraduate ICT Student | Project Builder";
+  let i = 0;
+  function type() {
+    if (i < text.length) {
+      document.getElementById("typing").innerHTML += text.charAt(i);
+      i++;
+      setTimeout(type, 70);
+    }
+  }
+  type();
+
+  // Scroll reveal
+  const reveals = document.querySelectorAll(".reveal");
+  const observer = new IntersectionObserver(entries => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        entry.target.classList.add("opacity-100", "translate-y-0");
+      }
+    });
+  }, { threshold: 0.1 });
+
+  reveals.forEach(el => {
+    el.classList.add("opacity-0", "translate-y-10", "transition", "duration-700");
+    observer.observe(el);
+  });
+</script>
+
+</body>
+</html>
